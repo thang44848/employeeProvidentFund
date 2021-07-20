@@ -50,7 +50,6 @@ export class AppComponent implements OnInit {
           governmentBond: governmentBond,
           providentFundEarnIfEmployeeLeaveToday: providentFundEarnInTotal
         }
-        // console.log(months);
       } else {
         return {
           ...employee, 
