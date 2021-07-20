@@ -60,7 +60,6 @@ export class AppComponent implements OnInit {
         }     
       }
     })
-    console.log(this.employeeData);
   }
 
   calculateProvidentFundEarnIfEmployeeLeaveCompanyToday(monthsOfWork: number, employeeContribution: number, companyContribution: number, governmentBond: number): number {
