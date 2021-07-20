@@ -1,0 +1,46 @@
+
+<div class="employee-table ">
+  <div class="row title font-bold">
+    Employee Provident Fund Management Application
+  </div>
+  <div class="header row font-bold">
+    <div class="name">
+      <span>Full Name</span>
+    </div>
+    <div class="age">
+      <span>Age</span>
+    </div>
+    <div class="accumulate-balances">
+      <span>Employee Contribution</span>
+    </div>
+    <div class="company-contribution">
+      <span>Company Contribution</span>
+    </div>
+    <div class="government-bond">
+      <span>Government Bond</span>
+    </div>
+    <div class="leave-today">
+      <span>Total Provident Fund Received (If leave today)</span>
+    </div>
+  </div>
+  <div class="header" *ngFor="let employee of employeeData; let i = index">
+    <div>    
+      {{ i+1 }}. {{ employee.firstname }} {{ employee.lastname}}
+    </div>
+    <div>
+      {{ employee.age }} years old
+    </div>
+    <div>
+      {{ employee.employeeContribution }} 
+    </div>
+    <div>
+      {{ employee.companyContribution }}
+    </div>
+    <div>
+      {{ employee.governmentBond }} 
+    </div>
+    <div>
+      {{ employee.providentFundEarnIfEmployeeLeaveToday }} 
+    </div>
+  </div>
+</div>
